@@ -1,0 +1,1500 @@
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+*{
+    margin: 0; padding:0;
+}
+body{
+    background: black url("../images/stars.png") repeat top center;
+    background-attachment: fixed;
+	 
+}
+
+
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+
+ 
+
+
+.twinkling{
+  background:transparent url(../images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+@font-face{
+    font-family:"DroidSans";
+    src:url(../fonts/DroidSans.ttf);
+    
+}
+
+header{
+  background: url("../images/hader_image.png") no-repeat top;
+    
+    
+  margin-bottom:20px; 
+}
+
+#header {
+    
+    min-height: 100px;
+    overflow: hidden;
+    background: black;
+   
+  
+}
+
+.wrapper {
+    width: 1073px;
+    margin: 0 auto;
+    list-style: none;
+	overflow:hidden;
+	
+    position:relative;
+	
+}
+#logo_search_holder{
+    
+    overflow: hidden;
+    width: 1074px;
+    
+    
+}
+.logo {
+    float: left;
+    
+}
+
+.logo img{
+    width: 176px;
+    margin: 0;
+   
+    
+}
+.menubar_holder {
+    float:none;
+    overflow: hidden;
+    
+    width: 895px;
+}
+
+.menubar {
+   
+}
+.menubar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+    
+}
+
+.menubar ul li{
+    background-color: #333333;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    width:147px;
+	height: 69px;
+	padding-top:20px;
+    float: right;
+    border: 1px solid black;
+    font-family:"DroidSans";
+    position:relative;
+    
+    font-weight: bold;
+    display:block-inline ;
+    
+}
+
+.menubar ul li a{
+    text-decoration: none;
+      color: white;
+   
+
+}
+.menubar ul li:hover{
+  color: antiquewhite;
+  background: #666666;
+    cursor: pointer;
+    
+}
+.header_search .search_box {
+    float: right;
+    padding-top: 5px;
+}
+.header_search .search_box input[type="text"]{
+    padding: 3px 30px;
+    float: left;
+    
+}
+.header_search .search_box input[type="button"] {
+    cursor: pointer;
+    background: url("../images/search.png") no-repeat center;
+    border: none;
+    color: white;
+    padding: 3px 20px 4px 27px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+ .hearder_bottom {
+    margin:auto;
+    float: none;
+    width: 100%;
+   margin: 1px 0 0 0;
+    
+    clear: both;
+     background-color: #333333;
+    min-height: 40px;
+}
+
+.h_bottom_left {
+    float: left;
+  
+    
+    
+}
+.h_bottom_left ul {
+    list-style: none;
+}
+
+.h_bottom_left ul li{
+    padding: 0px 10px 0px 9px;
+    border-right: 1px solid white;
+    float: left;
+    margin: 9px 0px 9px 9px;
+    font-family:"DroidSans";
+    font-size: 14px;
+    
+}
+
+.h_bottom_left ul li a{
+    text-decoration: none;
+     color: white;
+}
+
+.h_bottom_left ul li a:hover{
+    color: antiquewhite;
+   
+}
+
+
+
+.h_bottom_right {
+    float: right;
+     
+    
+}
+.h_bottom_right ul {
+    list-style: none;
+}
+
+.h_bottom_right ul li{
+    line-height: 20px;
+    
+   
+  padding: 0px 10px 0px 10px;
+    float: right;
+    margin: 9px 0px 9px 9px;
+    font-family:"DroidSans";
+    font-size: 14px;
+}
+.h_bottom_right ul li span img{
+    padding: 0px 9px 0px 9px;
+   
+    float: left;
+}
+.h_bottom_right ul li a{
+    text-decoration: none;
+     color: white;
+    
+}
+
+.h_bottom_right ul li a:hover{
+     color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+#slider {
+    
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: black;
+    border: 3px solid #333333;
+  
+}
+
+.slider_left {
+   background: black;
+    width: 70%;
+     font-family:"DroidSans";
+    clear: both;
+    
+    float: left;
+    overflow: hidden;
+}
+
+.slider_left_top {
+    width: 100%;
+    margin: 15px 0 15px 0;
+    min-height: 20px;
+    border-bottom: 1px solid white;
+}
+
+.slider_left_top ul {
+    list-style: none;
+}
+
+.slider_left_top ul li{
+    display: block;
+    color: white;
+    line-height: 10px;
+    float: left;
+    font-size: 14px;
+    padding: 0 5px 0 5px;
+    
+}
+
+
+
+
+.slider_left_top ul li a{
+}
+
+.slider_left_top ul li:hover{
+}
+.slider_left_bottom {
+    
+    color: white;
+    position: relative;
+    top: -12px;
+    float: left;
+    width: 58%;
+    
+}
+.slider_left_bottom .b_top_bg{
+  
+
+position: absolute;
+
+width: 100%;
+padding: 7px 0 20px 0;
+background-image: url("../images/bgh.png");
+
+    
+    
+}
+
+.slider_left_bottom p{
+   
+font-size: 14px; 
+    margin-bottom: 30px;
+    
+    
+}
+.slider_left_bottom .b_top_bg h1{
+   font-size: 40px; 
+    color: white;
+    opacity: 1;
+}
+.h_bottom_right {
+   float: right;
+    width: 41%;
+    
+}
+
+.h_bottom_right_box {
+    float: right;
+    border: 2px solid #666666;
+    padding: 3px;
+    color: white;
+     position: relative;
+    top: -12px;
+    background: #333333;
+    margin: 3px;
+}
+.h_bottom_right_box h1{
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 0px;
+    
+}
+.h_bottom_right_box p{
+    color: white;
+    font-size: 12px;
+    
+}
+
+.b_holder {
+    float: right;
+    border: 2px solid #666666;
+    padding: 3px;
+    color: white;
+     position: relative;
+    top: -12px;
+    background: #333333;
+    margin: 3px;
+    width: 292px;
+}
+
+.b_holder input[type="button"] {
+    background: #333333;
+    float: right;
+    border: 2px solid #666666;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 3px 10px;
+    cursor: pointer;
+   
+}
+
+.slider_right {
+    background: #333333;
+    width: 29%;
+    float: right;
+   
+    margin: 0;
+    padding: 0;
+    
+}
+
+.slider_right_images {
+     float: none;
+   margin: 11px auto;
+    overflow: hidden;
+   
+    width: 249px;
+    
+}
+
+.slider_right_s_image {
+    float: right;
+    margin: 2px;
+    
+    
+}
+
+
+/*-------Sliderend----->*/
+
+/*-------n_gallery start----->*/
+#n_gallery {
+    font-family:"DroidSans";
+    width: 100%;
+    
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.n_gallery_box-1 {
+    min-height: 50px;
+    background: url("../images/bg_nasa_gall.png")repeat-x #003366;
+    
+    float: left;
+    width: 34.5%;
+    color: white;
+    padding-left: 6px;
+}
+
+.n_gallery_box-1 h1{
+    font-size: 20px;
+    margin: 5px 10px 5px 10px;
+    
+}
+
+.n_bar {
+}
+
+.n_bar ul{
+    list-style: none;
+}
+.n_bar ul li{
+    display: block;
+    line-height: 20px;
+    float: left;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-left: 2px;
+     background: url("../images/g-button.png")repeat-x;
+    border-top-left-radius: 6px;
+     border-top-right-radius: 6px;
+    
+}
+.n_bar ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.n_bar ul li:hover{
+    background: url("../images/gh-button.png")repeat-x;
+}
+.n_image {
+}
+
+.n_buleet_holder {
+    
+}
+
+.n_buleet_holder h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bulet {
+   
+    
+}
+
+.n_des {
+    font-size: 14px;
+    margin: 5px 0 15px 0;
+}
+
+.ns_gallery_button {
+     width: 100%;
+}
+
+.ns_gallery_button input[type="button"] {
+      background: url("../images/vi-button.png")repeat-x;
+    border: none;
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.n_gallery_box-2 {
+     min-height: 50px;
+     background: url("../images/bg_nasa_m_gall.png")repeat-x #003366;
+    
+    float: left;
+    width: 32%;
+    margin: 0 15px;
+    color: white;
+}
+.n_gallery_box-2 h1 {
+    
+     font-size: 20px;
+    margin: 5px 10px 5px 10px;
+    
+}
+.n_slider_box {
+    float: none;
+    border: 1px solid #003399;
+    padding: 5px 2px 102px 2px;
+    clear: both;
+}
+
+.n_slider {
+    float: left;
+width: 128px;
+
+}
+
+
+.single_item {
+    float: left;
+}
+
+.left_indicator {
+    padding-top: 31px;
+    float: left;
+    cursor: pointer;
+}
+.right_indicator {
+    float: right;
+    padding-top: 31px;
+    cursor: pointer;
+}
+
+.n_slider_text {
+    float: right;
+   color: #CCFFFF;
+margin-top: 10px;
+}
+
+.n_slider_text h1{
+    font-size: 16px;
+}
+
+.n_slider_text p{
+    font-size: 12px;
+width: 194px;
+}
+.n_slider_text a{
+    float: right;
+    color: #CCFFFF;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+.n_gallery_box-3 {
+    
+    float: left;
+
+    width: 29.5%;
+    color: white;
+}
+
+.twitter  {
+   position: relative; 
+    
+}
+
+.twitter h1 {
+    
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    font-size: 18px;
+    
+}
+
+.twitter img {
+    
+     z-index: -99;
+    width: 100%;
+}
+.twitter p {
+    margin: 0 3px;
+    margin-top: -5px;
+    min-height: 230px;
+    background: #666666;
+    border: 1px solid #666666;
+    
+}
+.twitter span img {
+    
+     z-index: -99;
+    width: 100%;
+}
+.email {
+     position: relative; 
+}
+
+.email h1 {
+    width: 100%;
+    border-top: 2px solid #333333;
+    margin-top: 5px;
+     position: absolute;
+    top: 6px;
+    padding: 5px 10px 0 10px;
+    font-size: 18px;
+}
+.email img{
+    width: 100%;
+}
+.search_box_holder {
+   
+}
+.search_box_holder {
+    position: relative; 
+    background: #666666;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin: 0px 2px;
+   
+}
+.search_box_holder img {
+   width: 100%;
+}
+
+.search_box_holder .search_box {
+    font-size: 14px;
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-top: -5px; 
+}
+.search_box_holder h2{
+    padding-left: 15px;
+    font-size: 14px;
+    width: 100%;
+    
+     
+    padding-top: 15px;
+}
+.search_box_holder .search_box input[type="text"]{
+    padding: 3px 15px;
+    float: left;
+    
+}
+.search_box_holder .search_box input[type="button"] {
+    cursor: pointer;
+    background: url("../images/search.png") no-repeat center;
+    border: none;
+    color: white;
+    padding: 3px 20px 6px 27px;
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+}
+
+/*-------n_gallery end----->*/
+
+/*-------n_blog cal stare----->*/
+
+#n_blog_cal {
+     font-family:"DroidSans";
+    width: 100%;
+   
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.n_blog_cal_box-1 {
+    background: url("../images/menu_bar _blog.png")repeat-x #003366;
+    float: left;
+    width: 34.5%;
+    color: white;
+    padding-left: 6px;
+    
+}
+
+
+.n_blog_cal_box-1 h1{
+    font-size: 20px;
+    margin: 5px 10px 5px 10px;
+    
+}
+.n_blog_cal_box-1 h1 span{
+   
+   float: right;;
+    
+}
+.blog_holder{
+  border: 2px solid #333333;;  
+    
+}
+.blog_r1 {
+    color: #CCCCFF;
+    font-size: 14px;
+    font-weight: bold;;
+    border-bottom: 1px solid #006699;
+    padding: 5px 5px 5px 0px;
+}
+
+.blog_r1 span{
+    color: white;
+    font-weight: normal;
+}
+
+.blog_re span{
+    color: white;
+    font-weight: normal;
+}
+.blog_re{
+    
+   border-bottom:5px solid #006699;
+
+   color: #CCCCFF;
+   font-size: 14px;
+   font-weight: bold;;
+   padding: 10px 5px 10px 0px;
+            
+}
+.ns_blog_button{
+   width: 100%; 
+    
+}
+.ns_blog_button input[type="button"] {
+      background: url("../images/vi-button.png")repeat-x;
+    border: none;
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 10px 13px 12px 0;
+    color: white;
+}
+.n_blog_cal_box-2 {
+    
+      min-height: 50px;
+     background: url("../images/menu_bar _blog.png")repeat-x #003366;
+    
+    float: left;
+    width: 32%;
+    margin: 0 15px;
+    color: white;
+}
+
+.n_blog_cal_box-2 h1{
+     margin: 5px 10px 5px 10px;
+    font-size: 20px;
+    
+}
+
+
+.calendar {
+    
+}
+
+
+/*----calender start----*/
+
+
+
+.month {
+    padding: 0;
+    width: 100%;
+    background: #003366;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.month ul li {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    line-height: 15px;
+    padding-top: 10px;
+    font-weight: bold;
+    
+}
+
+.month .prev {
+    float: left;
+    padding: 10px 0px 0px 15px;
+}
+
+.month .next {
+    float: right;
+   padding: 10px 15px 0px 0px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+}
+
+
+.days {
+    padding: 10px 0;
+    background: #003366;
+    margin: 8px 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12.5%;
+    line-height: 20px;
+    text-align: center;
+    margin: 0px -3px ;
+    font-size:12px;
+    color: white;
+    border: 1px solid #006699;
+}
+.days li .blank{
+   color: #003366
+    
+}
+.days li .active {
+    padding: 2px 12px 2px 12px;
+    background: #000066;
+    color: white !important
+}
+
+
+.nc_blog_button{
+   width: 100%; 
+    
+}
+.nc_blog_button input[type="button"] {
+      background: url("../images/vi-button.png")repeat-x;
+    border: none;
+    float: right;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: -10px 13px 22px 0;
+    color: white;
+}
+
+/*------calender end------*/
+
+body{
+
+}
+
+.n_blog_cal_box-3 {
+    
+     float: left;
+    width: 29.5%;
+    color: white;
+    
+}
+
+.interest_top {
+   
+    position: relative;
+    
+}
+
+.interest_top img{
+    width: 100%;
+   
+}
+
+.interest_top h1{
+    font-size: 18px;
+    position: absolute;
+    top: 0px;
+    left: 19px;
+}
+.interst_contain {
+    
+}
+
+.interst_contain .in_menubar {
+   overflow: hidden;
+   
+}
+.m_menubar{
+    
+   
+    
+    
+}
+
+.m_menubar ul{
+    list-style: none
+    
+    
+}
+
+.m_menubar ul li{
+    display: block;
+    line-height: 30px;
+    float: left;
+    width:103px;
+	height:36px;
+	text-align:center;
+    margin: 1px 1px 0px 1px;
+    font-size: 14px;
+    background: #333333;
+    border-top-left-radius: 5px;
+    font-weight: bold;
+    
+}
+
+.m_menubar ul li a{
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.m_menubar ul li:hover{
+    
+    background: #666666;
+}
+.lowermenu {
+    
+    max-height: 25px;
+    clear: both;
+    font-size: 14px;
+    
+}
+.lowermenu a{
+    display: block;
+    color: #CCFFFF;
+    text-align:center;
+    float: left;
+    background: #666666;
+    width:78px;
+	height:36px;
+    font-weight: bold;
+    text-decoration: none;
+	padding-top: 11px;
+}
+.lowermenu a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.intersted_body{
+    margin: 0 2px;
+    border: 2px solid #666666;
+     overflow-y: scroll;
+    clear: both;
+    height: 300px;
+    background: #003366;
+    
+    
+}
+
+.images_holder {
+    
+   
+    clear: both;
+  
+    
+}
+
+.picture {
+    float: left;
+    
+    margin: 10px;
+}
+
+.pic_text {
+    float: right;
+   
+    width: 66%;
+    margin: 10px 0 0 5px;
+    height: 54px;
+    font-size: 14px;
+}
+
+.interest_bottom img{
+    width: 100%;
+}
+
+.interest_bottom_3 {
+    width: 100%;
+    position: relative;
+    top: -5px;
+}
+
+.interest_bottom_3 img{
+    width: 100%;
+}
+
+
+.interest_bottom_3 h1{
+    font-size: 20px;
+    position: absolute;
+    z-index: 99;
+    top: -5px;
+    left: 37px;
+    
+}
+/*-------n_blog cal end----->*/
+
+
+/*-------n_expo lead start----->*/
+
+.wrappe2r {
+     font-family:"DroidSans";
+    
+
+width: 734px;
+
+float:left;
+margin-top:-400px;
+
+    overflow: hidden;
+	
+}
+
+#n_explore _leader {
+    
+}
+
+.n_explore_leader_box-1 {
+    background: url("../images/ex_leader.png")repeat-x #001f33;
+    float: left;
+    width: 50.5%;
+    color: white;
+    padding-left: 6px;
+    
+}
+
+.n_explore_leader_box-1 h1{
+    font-size: 18px;
+    line-height: 0;
+    padding-top: 5px;
+    
+    
+}
+
+.n_explore_body {
+    float: left;
+    margin: 10px 0 0 8px;
+}
+
+.n_explore_body_hold{
+        
+        overflow: hidden;
+        width: 352px;
+        margin: 0 auto;
+        float: none;
+
+}
+.ex_image {
+    border: 2px solid black;
+}
+
+.ex_text {
+   
+width: 158px;
+margin-left: 0px;
+padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.n_explore_leader_box-2 {
+   
+    background: url("../images/ex_leader.png")repeat-x #001f33;
+    float: left;
+    width: 46%;
+    margin: 0 0px 0 17px;
+    color: white;
+}
+.n_explore_leader_box-2 h1{
+    font-size: 18px;
+    line-height: 0;
+    padding-top: 5px;
+    
+    
+}
+
+.n_leader_box-1 {
+    
+    margin-left: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+    
+}
+
+.n_leader_body {
+     margin: 15px 0 15px 0;
+    clear: both;
+    width: 100px
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.el_image {
+    float: left;
+    border: 2px solid white;
+}
+
+.el_text {
+   float: right;
+width: 192px;
+    margin-left: 5px;
+}
+.el_text h2{
+   font-size: 16px;
+}
+.el_text p{
+   font-size: 14px;
+}
+
+
+/*-------n_expo lead end----->*/
+
+
+.contain_bottom_holder{
+    
+    margin-top: 20px;
+    clear: both;
+    float: left;
+    color: white;
+    
+    
+}
+
+.contain_bottom_holder .box{
+    float: left;
+    width: 175px;
+    background: #001f33;
+    display: block;
+    
+    
+}
+
+.cb_holder_1{
+    
+    overflow: hidden;
+    width:360px;
+    float: left;
+    margin-right: 3px;
+    
+}
+.cb_holder_2{
+   
+    overflow: hidden;
+     width:360px;
+    float: right;
+    margin-left: 3px;
+}
+
+.contain_bottom_holder-2{
+    margin: 0 0px 0 0px;
+}
+.contain_bottom_holder-3{
+    margin: 0 0px 0 0px;
+}
+
+
+
+.b_image{
+    float: left;
+    
+    margin:10px;
+}
+
+.b_image img{
+    
+    width: 155px;
+}
+
+.b_text{
+    font-size: 14px;
+    
+     width: 155px;
+    padding: 5px;
+}
+
+
+/*---footer start-------*/
+#footer{
+   margin-top: 20px;
+    color: white;
+    
+}
+
+#footer .logo img{
+    width: 150px;
+    
+}
+.f_box{
+    width: 216px;
+    float: left;
+    padding: 6px;
+    background: #1d1d1d;
+    border: 1px solid black;
+    
+    
+}
+/*---footer end-------*/
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
