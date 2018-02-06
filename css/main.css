@@ -875,74 +875,78 @@ width: 194px;
 
 
 
-.month {
-    padding: 0;
-    width: 100%;
-    background: #003366;
-    text-align: center;
-}
-
-.month ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.month ul li {
-    color: white;
-    font-size: 12px;
-    text-transform: uppercase;
-    display: block;
-    line-height: 15px;
-    padding-top: 10px;
-    font-weight: bold;
-    
-}
-
-.month .prev {
-    float: left;
-    padding: 10px 0px 0px 15px;
-}
-
-.month .next {
-    float: right;
-   padding: 10px 15px 0px 0px;
-}
-
-.weekdays {
-    margin: 0;
-    padding: 10px 0;
-    background-color: #ddd;
-}
-
-
-.days {
-    padding: 10px 0;
-    background: #003366;
-    margin: 8px 0;
-}
-
-.days li {
-    list-style-type: none;
-    display: inline-block;
-    width: 12.5%;
-    line-height: 20px;
-    text-align: center;
-    margin: 0px -3px ;
-    font-size:12px;
-    color: white;
-    border: 1px solid #006699;
-}
-.days li .blank{
-   color: #003366
-    
-}
-.days li .active {
-    padding: 2px 12px 2px 12px;
-    background: #000066;
-    color: white !important
-}
-
+.cal_head{
+      
+      position: relative;
+	  
+    }
+   .cal_head h2 {
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+	  min-height:20px;
+      text-align: center;
+	  background:#0a3d70;
+	  color:white;
+	  padding-top:5px;
+	  border:1px solid #000528;
+	  
+    }
+   .cal_head button {
+      position: absolute;
+      top: 0px;
+	  padding:2px 5px 6px 5px;
+	 background:#0a3d70;
+	 border:1px solid #000528;
+	 cursor:pointer;
+    }
+	
+	 .cal_head button:hover {
+	 background:#0099FF;
+	 
+	 }
+    button:first-child {
+	
+      left: 0;
+    }
+    button:last-child {
+      right: 0;
+    }
+    table {
+	margin-top:0px;
+      background: #002b56;
+      border-collapse: collapse;
+      
+      font-family: 'PT Sans', sans-serif;
+      font-size: 13px;
+      width: 100%;
+    }
+    td {
+      border: 1px solid #006699;
+      color: white;
+      line-height: 22px;
+      text-align: center;
+	  min-height:200px;
+	 overflow:hidden;
+    }
+	td .indecate{
+	background:#00498e;
+	
+	}
+    tr:first-child td {
+      color: white;
+      font-weight: 700;
+    }
+    .selected {
+      background: #000f40;
+      border: 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+    }
+	.mark {
+      background: #00498e;
+      border: 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+    }
 
 .nc_blog_button{
    width: 100%; 
@@ -955,15 +959,13 @@ width: 194px;
     font-size: 14px;
     cursor: pointer;
     padding: 5px 10px;
-    margin: -10px 13px 22px 0;
+    margin: 10px 13px 11px 0;
     color: white;
 }
 
 /*------calender end------*/
 
-body{
 
-}
 
 .n_blog_cal_box-3 {
     
